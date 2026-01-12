@@ -17,7 +17,7 @@
 
 ## Project Overview
 
-A modern, responsive personal portfolio website for Dhruv Thakar, featuring:
+A modern, responsive personal portfolio website, featuring:
 - **Frontend**: HTML5, Tailwind CSS, JavaScript (ES6+)
 - **Backend**: Node.js, Express.js
 - **Database**: MongoDB (with Mongoose ODM)
@@ -25,8 +25,7 @@ A modern, responsive personal portfolio website for Dhruv Thakar, featuring:
 - **PWA Support**: Service Worker for offline functionality
 - **Security**: Helmet.js, CORS, Rate Limiting
 
-**Live Demo**: [https://dhruvthakar.dev](https://dhruvthakar.dev)  
-**GitHub**: [https://github.com/dhruvht612/Portfolio](https://github.com/dhruvht612/Portfolio)
+**GitHub**: [https://github.com/DimePrangija/Portfolio](https://github.com/DimePrangija/Portfolio)
 
 ---
 
@@ -221,7 +220,7 @@ Portfolio/
 
 ### Step 1: Clone Repository
 ```bash
-git clone https://github.com/dhruvht612/Portfolio.git
+git clone https://github.com/DimePrangija/Portfolio.git
 cd Portfolio
 ```
 
@@ -239,17 +238,22 @@ PORT=3000
 NODE_ENV=development
 
 # MongoDB Configuration
-MONGO_URI=mongodb+srv://username:password@cluster.mongodb.net/portfolio?retryWrites=true&w=majority
+# Replace with your MongoDB Atlas connection string or local MongoDB URI
+MONGO_URI=mongodb+srv://YOUR_USERNAME:YOUR_PASSWORD@YOUR_CLUSTER.mongodb.net/portfolio?retryWrites=true&w=majority
+# Example local: MONGO_URI=mongodb://localhost:27017/portfolio
 
 # Email Configuration (Gmail)
+# Replace with your actual email credentials
 EMAIL_USER=your.email@gmail.com
 EMAIL_PASS=your_app_specific_password
 
-# OpenAI API (for chatbot)
-OPENAI_API_KEY=sk-your-openai-api-key
+# OpenAI API (for chatbot - optional)
+# Replace with your actual OpenAI API key if using chatbot feature
+OPENAI_API_KEY=sk-YOUR_OPENAI_API_KEY_HERE
 
 # Domain (for production CORS)
-DOMAIN=https://dhruvthakar.dev
+# Replace with your actual domain
+DOMAIN=https://your-domain.vercel.app
 ```
 
 ### Step 4: Run in Development Mode
