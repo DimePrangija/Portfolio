@@ -1,4 +1,4 @@
-# 🚀 Dhruv Thakar - Portfolio Website
+# 🚀 Nikola Dimitrijevic - Portfolio Website
 
 <div align="center">
 
@@ -11,7 +11,7 @@
 
 ### A modern, interactive portfolio showcasing projects, skills, and achievements
 
-[View Live Demo](#) • [Report Bug](https://github.com/dhruvht612/Portfolio/issues) • [Request Feature](https://github.com/dhruvht612/Portfolio/issues)
+[View Live Demo](#) • [Report Bug](https://github.com/DimePrangija/Portfolio/issues) • [Request Feature](https://github.com/DimePrangija/Portfolio/issues)
 
 </div>
 
@@ -36,7 +36,7 @@
 
 ## 🎯 Overview
 
-A **professional portfolio website** for **Dhruv Thakar**, Computer Science student at **Ontario Tech University**. This portfolio showcases technical projects, leadership experience, and skills through an engaging, modern interface with advanced animations and interactive components.
+A **professional portfolio website** for **Nikola Dimitrijevic**, Product Manager and Developer. This portfolio showcases technical projects, skills, and achievements through an engaging, modern interface with advanced animations and interactive components.
 
 ### Key Highlights:
 - ✨ **15+ Featured Projects** spanning web development, algorithms, robotics, and electronics
@@ -223,7 +223,7 @@ A **professional portfolio website** for **Dhruv Thakar**, Computer Science stud
 
 ```bash
 # Clone the repository
-git clone https://github.com/dhruvht612/Portfolio.git
+git clone https://github.com/DimePrangija/Portfolio.git
 
 # Navigate to the project directory
 cd Portfolio
@@ -237,7 +237,7 @@ open index.html
 
 ```bash
 # Clone the repository
-git clone https://github.com/dhruvht612/Portfolio.git
+git clone https://github.com/DimePrangija/Portfolio.git
 
 # Navigate to the project directory
 cd Portfolio
@@ -643,14 +643,11 @@ While this is a personal portfolio, suggestions and feedback are welcome!
 
 ## 📞 Contact
 
-**Dhruv Thakar**
+**Nikola Dimitrijevic**
 
-- 📧 Email: [thakardhruvh@gmail.com](mailto:thakardhruvh@gmail.com)
-- 💼 LinkedIn: [linkedin.com/in/dhruv-thakar-ba46aa296](https://linkedin.com/in/dhruv-thakar-ba46aa296)
-- 💻 GitHub: [github.com/dhruvht612](https://github.com/dhruvht612)
-- 📍 Location: Oshawa, Ontario, Canada
-- 🎓 University: Ontario Tech University
-- 📅 Graduation: April 2028
+- 📧 Email: [nikoladimitrijevic314@gmail.com](mailto:nikoladimitrijevic314@gmail.com)
+- 💼 LinkedIn: [linkedin.com/in/nikodimitrijevic7](https://linkedin.com/in/nikodimitrijevic7)
+- 💻 GitHub: [github.com/DimePrangija](https://github.com/DimePrangija)
 
 ---
 
@@ -722,11 +719,9 @@ After deployment:
 **Original Author**: Dhruv Thakar  
 **Original Repository**: [dhruvht612/Portfolio](https://github.com/dhruvht612/Portfolio)
 
-© 2025 Dhruv Thakar. All rights reserved.
+© 2025 Nikola Dimitrijevic. All rights reserved.
 
-This project is for personal portfolio purposes. Feel free to use it as inspiration for your own portfolio, but please provide appropriate credit.
-
-**Forked and customized for**: Nikola Dimitrijevic
+This project is for personal portfolio purposes. Forked from [dhruvht612/Portfolio](https://github.com/dhruvht612/Portfolio) and customized. Original author retains rights. Feel free to use it as inspiration for your own portfolio, but please provide appropriate credit.
 
 ---
 
@@ -734,16 +729,16 @@ This project is for personal portfolio purposes. Feel free to use it as inspirat
 
 - **Tailwind CSS** - For the amazing utility-first framework
 - **Font Awesome** - For comprehensive icon library
-- **Ontario Tech University** - For the amazing education and opportunities
+- **Dhruv Thakar** - For the original portfolio design and codebase
 - **Community** - For inspiration and feedback
 
 ---
 
 ## 📊 Stats
 
-![](https://img.shields.io/github/stars/dhruvht612/Portfolio?style=social)
-![](https://img.shields.io/github/forks/dhruvht612/Portfolio?style=social)
-![](https://img.shields.io/github/watchers/dhruvht612/Portfolio?style=social)
+![](https://img.shields.io/github/stars/DimePrangija/Portfolio?style=social)
+![](https://img.shields.io/github/forks/DimePrangija/Portfolio?style=social)
+![](https://img.shields.io/github/watchers/DimePrangija/Portfolio?style=social)
 
 ---
 
@@ -751,8 +746,10 @@ This project is for personal portfolio purposes. Feel free to use it as inspirat
 
 ### ⭐ Star this repository if you found it helpful!
 
-Made with ❤️ and ☕ by [Dhruv Thakar](https://github.com/dhruvht612)
+Made with ❤️ and ☕ by [Nikola Dimitrijevic](https://github.com/DimePrangija)
 
-**[↑ Back to Top](#-dhruv-thakar---portfolio-website)**
+Forked from [dhruvht612/Portfolio](https://github.com/dhruvht612/Portfolio)
+
+**[↑ Back to Top](#-nikola-dimitrijevic---portfolio-website)**
 
 </div>
