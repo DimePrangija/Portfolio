@@ -907,7 +907,7 @@
   
       <button
         class="filter-btn px-5 py-2.5 rounded-full text-sm font-medium text-gray-300 bg-gray-800 border border-gray-700 hover:border-[#22d3ee] hover:text-[#22d3ee] transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-[#22d3ee] focus:ring-offset-2 focus:ring-offset-gray-900"
-        data-filter="c++" aria-pressed="false" aria-label="Filter projects by C++">
+        data-filter="cpp" aria-pressed="false" aria-label="Filter projects by C++">
         <i class="fas fa-code text-[#22d3ee] mr-2" aria-hidden="true"></i> C++
       </button>
   
@@ -918,15 +918,27 @@
       </button>
   
       <button
-        class="filter-btn px-5 py-2.5 rounded-full text-sm font-medium text-gray-300 bg-gray-800 border border-gray-700 hover:border-[#22d3ee] hover:text-[#22d3ee] transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-[#22d3ee] focus:ring-offset-2 focus:ring-offset-gray-900"
-        data-filter="circuit" aria-pressed="false" aria-label="Filter projects by Circuit">
-        <i class="fas fa-bolt text-[#22d3ee] mr-2" aria-hidden="true"></i> Circuit
-      </button>
-  
-      <button
         class="filter-btn px-5 py-2.5 rounded-full text-sm font-medium text-gray-300 bg-gray-800 border border-gray-700 hover:border-teal-400 hover:text-teal-400 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-teal-400 focus:ring-offset-2 focus:ring-offset-gray-900"
         data-filter="python" aria-pressed="false" aria-label="Filter projects by Python">
         <i class="fab fa-python text-teal-400 mr-2" aria-hidden="true"></i> Python
+      </button>
+  
+      <button
+        class="filter-btn px-5 py-2.5 rounded-full text-sm font-medium text-gray-300 bg-gray-800 border border-gray-700 hover:border-cyan-400 hover:text-cyan-400 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-cyan-400 focus:ring-offset-2 focus:ring-offset-gray-900"
+        data-filter="react" aria-pressed="false" aria-label="Filter projects by React">
+        <i class="fab fa-react text-cyan-400 mr-2" aria-hidden="true"></i> React
+      </button>
+  
+      <button
+        class="filter-btn px-5 py-2.5 rounded-full text-sm font-medium text-gray-300 bg-gray-800 border border-gray-700 hover:border-blue-500 hover:text-blue-500 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:ring-offset-gray-900"
+        data-filter="typescript" aria-pressed="false" aria-label="Filter projects by TypeScript">
+        <i class="fas fa-code text-blue-500 mr-2" aria-hidden="true"></i> TypeScript
+      </button>
+  
+      <button
+        class="filter-btn px-5 py-2.5 rounded-full text-sm font-medium text-gray-300 bg-gray-800 border border-gray-700 hover:border-purple-400 hover:text-purple-400 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-purple-400 focus:ring-offset-2 focus:ring-offset-gray-900"
+        data-filter="swift" aria-pressed="false" aria-label="Filter projects by Swift">
+        <i class="fab fa-swift text-purple-400 mr-2" aria-hidden="true"></i> Swift
       </button>
     </div>
   
@@ -940,8 +952,8 @@
   
     <!-- Project Cards Grid -->
     <div class="grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 max-w-7xl mx-auto">
-<!-- Project 1: JobFlow -->
-      <div class="project-card group relative bg-gradient-to-br from-[#111827] to-[#1a1f35] border border-[#1f2937] rounded-2xl overflow-hidden shadow-xl transition-all duration-500 hover:border-[#14b8a6] hover:shadow-[0_0_30px_rgba(20,184,166,0.4)] hover:scale-[1.03] hover:-translate-y-2" data-category="react typescript">
+      <!-- Project 1: JobFlow -->
+      <div class="project-card group relative bg-gradient-to-br from-[#111827] to-[#1a1f35] border border-[#1f2937] rounded-2xl overflow-hidden shadow-xl transition-all duration-500 hover:border-[#14b8a6] hover:shadow-[0_0_30px_rgba(20,184,166,0.4)] hover:scale-[1.03] hover:-translate-y-2" data-category="react typescript javascript html css">
         <div class="absolute top-3 right-3 z-10">
           <span class="bg-gradient-to-r from-blue-500 to-cyan-500 text-white px-3 py-1 rounded-full text-xs font-bold shadow-lg">
             <i class="fas fa-briefcase mr-1"></i>CRM
@@ -983,7 +995,7 @@
       </div>
     
       <!-- Project 3: Human-Centered AI Intervention System -->
-      <div class="project-card group relative bg-gradient-to-br from-[#111827] to-[#1a1f35] border border-[#1f2937] rounded-2xl overflow-hidden shadow-xl transition-all duration-500 hover:border-[#14b8a6] hover:shadow-[0_0_30px_rgba(20,184,166,0.4)] hover:scale-[1.03] hover:-translate-y-2" data-category="ai machine-learning">
+      <div class="project-card group relative bg-gradient-to-br from-[#111827] to-[#1a1f35] border border-[#1f2937] rounded-2xl overflow-hidden shadow-xl transition-all duration-500 hover:border-[#14b8a6] hover:shadow-[0_0_30px_rgba(20,184,166,0.4)] hover:scale-[1.03] hover:-translate-y-2" data-category="python ai machine-learning">
         <div class="absolute top-3 right-3 z-10">
           <span class="bg-gradient-to-r from-purple-500 to-pink-500 text-white px-3 py-1 rounded-full text-xs font-bold shadow-lg">
             <i class="fas fa-brain mr-1"></i>AI/ML
@@ -1022,7 +1034,7 @@
       </div>
     
       <!-- Project 2: Habitualist -->
-      <div class="project-card group relative bg-gradient-to-br from-[#111827] to-[#1a1f35] border border-[#1f2937] rounded-2xl overflow-hidden shadow-xl transition-all duration-500 hover:border-[#14b8a6] hover:shadow-[0_0_30px_rgba(20,184,166,0.4)] hover:scale-[1.03] hover:-translate-y-2" data-category="ios swift">
+      <div class="project-card group relative bg-gradient-to-br from-[#111827] to-[#1a1f35] border border-[#1f2937] rounded-2xl overflow-hidden shadow-xl transition-all duration-500 hover:border-[#14b8a6] hover:shadow-[0_0_30px_rgba(20,184,166,0.4)] hover:scale-[1.03] hover:-translate-y-2" data-category="ios swift mobile">
         <div class="absolute top-3 right-3 z-10">
           <span class="bg-gradient-to-r from-green-500 to-emerald-500 text-white px-3 py-1 rounded-full text-xs font-bold shadow-lg">
             <i class="fab fa-apple mr-1"></i>iOS
@@ -1061,12 +1073,12 @@
       </div>
     
       <!-- Project 4: Calendar Availability Optimization App -->
-      <div class="project-card group relative bg-gradient-to-br from-[#111827] to-[#1a1f35] border border-[#1f2937] rounded-2xl overflow-hidden shadow-xl transition-all duration-500 hover:border-[#14b8a6] hover:shadow-[0_0_30px_rgba(20,184,166,0.4)] hover:scale-[1.03] hover:-translate-y-2" data-category="algorithms fullstack">
+      <div class="project-card group relative bg-gradient-to-br from-[#111827] to-[#1a1f35] border border-[#1f2937] rounded-2xl overflow-hidden shadow-xl transition-all duration-500 hover:border-[#14b8a6] hover:shadow-[0_0_30px_rgba(20,184,166,0.4)] hover:scale-[1.03] hover:-translate-y-2" data-category="algorithms fullstack javascript python java ios">
         <div class="absolute top-3 right-3 z-10">
           <span class="bg-gradient-to-r from-yellow-400 to-orange-500 text-gray-900 px-3 py-1 rounded-full text-xs font-bold shadow-lg">
             <i class="fas fa-graduation-cap mr-1"></i>Capstone
           </span>
-        </div>
+          </div>
         <div class="relative h-40 bg-gradient-to-br from-[#14b8a6]/20 to-[#22d3ee]/20 flex items-center justify-center overflow-hidden">
           <div class="text-6xl text-[#22d3ee] transition-transform duration-500 group-hover:scale-110 group-hover:rotate-6">
             <i class="fas fa-calendar-check"></i>
@@ -1100,7 +1112,41 @@
       </div>
     
       <!-- Project 5: Arduino Embedded Systems Project -->
-      <div class="project-card group relative bg-gradient-to-br from-[#111827] to-[#1a1f35] border border-[#1f2937] rounded-2xl overflow-hidden shadow-xl transition-all duration-500 hover:border-[#14b8a6] hover:shadow-[0_0_30px_rgba(20,184,166,0.4)] hover:scale-[1.03] hover:-translate-y-2" data-category="finance analysis">
+      <div class="project-card group relative bg-gradient-to-br from-[#111827] to-[#1a1f35] border border-[#1f2937] rounded-2xl overflow-hidden shadow-xl transition-all duration-500 hover:border-[#14b8a6] hover:shadow-[0_0_30px_rgba(20,184,166,0.4)] hover:scale-[1.03] hover:-translate-y-2" data-category="arduino hardware cpp">
+        <div class="relative h-40 bg-gradient-to-br from-red-500/20 to-orange-500/20 flex items-center justify-center overflow-hidden">
+          <div class="text-6xl text-red-400 transition-transform duration-500 group-hover:scale-110 group-hover:rotate-6">
+            <i class="fas fa-microchip"></i>
+          </div>
+          <div class="absolute inset-0 bg-gradient-to-t from-[#111827] to-transparent opacity-60"></div>
+        </div>
+        <div class="p-6">
+          <h3 class="text-xl font-bold mb-3 bg-gradient-to-r from-[#14b8a6] to-[#22d3ee] bg-clip-text text-transparent group-hover:from-[#22d3ee] group-hover:to-[#14b8a6] transition-all duration-300">
+            Arduino Embedded Systems Project
+          </h3>
+          <p class="text-gray-300 mb-4 text-sm leading-relaxed">Hardware project involving sensor integration, real-time control logic, and low-level programming. Demonstrates hands-on engineering experience working across hardware–software boundaries.</p>
+          <div class="mb-4">
+            <h4 class="text-xs font-semibold text-gray-400 mb-2 uppercase tracking-wide">Key Features</h4>
+            <ul class="space-y-1 text-sm text-gray-400">
+              <li class="flex items-start"><i class="fas fa-check-circle text-[#14b8a6] mr-2 mt-1 text-xs"></i><span>Sensor integration & control</span></li>
+              <li class="flex items-start"><i class="fas fa-check-circle text-[#14b8a6] mr-2 mt-1 text-xs"></i><span>Real-time embedded programming</span></li>
+              <li class="flex items-start"><i class="fas fa-check-circle text-[#14b8a6] mr-2 mt-1 text-xs"></i><span>Hardware–software integration</span></li>
+        </ul>
+          </div>
+          <div class="flex flex-wrap gap-2 mb-4">
+            <span class="bg-red-500/20 text-red-400 px-3 py-1 rounded-full text-xs font-semibold border border-red-500/30">Arduino</span>
+            <span class="bg-orange-500/20 text-orange-400 px-3 py-1 rounded-full text-xs font-semibold border border-orange-500/30">Hardware</span>
+            <span class="bg-yellow-500/20 text-yellow-400 px-3 py-1 rounded-full text-xs font-semibold border border-yellow-500/30">Embedded</span>
+          </div>
+          <div class="flex gap-2 pt-4 border-t border-gray-700/50">
+            <button disabled class="flex-1 bg-gray-600/50 text-gray-400 px-4 py-2.5 rounded-lg text-xs font-bold cursor-not-allowed opacity-60">
+              <i class="fas fa-lock mr-2"></i>Private
+            </button>
+          </div>
+        </div>
+      </div>
+    
+      <!-- Project 6: DCF Valuation - Levi Strauss & Co. -->
+      <div class="project-card group relative bg-gradient-to-br from-[#111827] to-[#1a1f35] border border-[#1f2937] rounded-2xl overflow-hidden shadow-xl transition-all duration-500 hover:border-[#14b8a6] hover:shadow-[0_0_30px_rgba(20,184,166,0.4)] hover:scale-[1.03] hover:-translate-y-2" data-category="finance analysis python">
         <div class="absolute top-3 right-3 z-10">
           <span class="bg-gradient-to-r from-indigo-500 to-purple-500 text-white px-3 py-1 rounded-full text-xs font-bold shadow-lg">
             <i class="fas fa-chart-line mr-1"></i>Finance
@@ -1138,35 +1184,74 @@
         </div>
       </div>
     
-      <!-- Project 6: DCF Valuation - Levi Strauss & Co. -->
-        <div class="relative h-40 bg-gradient-to-br from-red-500/20 to-orange-500/20 flex items-center justify-center overflow-hidden">
-          <div class="text-6xl text-red-400 transition-transform duration-500 group-hover:scale-110 group-hover:rotate-6">
-            <i class="fas fa-microchip"></i>
+      <!-- Project 7: ConversionApp -->
+      <div class="project-card group relative bg-gradient-to-br from-[#111827] to-[#1a1f35] border border-[#1f2937] rounded-2xl overflow-hidden shadow-xl transition-all duration-500 hover:border-[#14b8a6] hover:shadow-[0_0_30px_rgba(20,184,166,0.4)] hover:scale-[1.03] hover:-translate-y-2" data-category="ios swift mobile">
+        <div class="relative h-40 bg-gradient-to-br from-yellow-500/20 to-orange-500/20 flex items-center justify-center overflow-hidden">
+          <div class="text-6xl text-yellow-400 transition-transform duration-500 group-hover:scale-110 group-hover:rotate-6">
+            <i class="fas fa-exchange-alt"></i>
           </div>
           <div class="absolute inset-0 bg-gradient-to-t from-[#111827] to-transparent opacity-60"></div>
         </div>
         <div class="p-6">
           <h3 class="text-xl font-bold mb-3 bg-gradient-to-r from-[#14b8a6] to-[#22d3ee] bg-clip-text text-transparent group-hover:from-[#22d3ee] group-hover:to-[#14b8a6] transition-all duration-300">
-            Arduino Embedded Systems Project
+            ConversionApp
           </h3>
-          <p class="text-gray-300 mb-4 text-sm leading-relaxed">Hardware project involving sensor integration, real-time control logic, and low-level programming. Demonstrates hands-on engineering experience working across hardware–software boundaries.</p>
+          <p class="text-gray-300 mb-4 text-sm leading-relaxed">Lightweight unit conversion application with fast, accurate conversions and an intuitive interface. Demonstrates clean logic, straightforward UI design, and reliability.</p>
           <div class="mb-4">
             <h4 class="text-xs font-semibold text-gray-400 mb-2 uppercase tracking-wide">Key Features</h4>
             <ul class="space-y-1 text-sm text-gray-400">
-              <li class="flex items-start"><i class="fas fa-check-circle text-[#14b8a6] mr-2 mt-1 text-xs"></i><span>Sensor integration & control</span></li>
-              <li class="flex items-start"><i class="fas fa-check-circle text-[#14b8a6] mr-2 mt-1 text-xs"></i><span>Real-time embedded programming</span></li>
-              <li class="flex items-start"><i class="fas fa-check-circle text-[#14b8a6] mr-2 mt-1 text-xs"></i><span>Hardware–software integration</span></li>
+              <li class="flex items-start"><i class="fas fa-check-circle text-[#14b8a6] mr-2 mt-1 text-xs"></i><span>Fast & accurate unit conversions</span></li>
+              <li class="flex items-start"><i class="fas fa-check-circle text-[#14b8a6] mr-2 mt-1 text-xs"></i><span>Simple, intuitive interface</span></li>
+              <li class="flex items-start"><i class="fas fa-check-circle text-[#14b8a6] mr-2 mt-1 text-xs"></i><span>Reliable & user-friendly</span></li>
         </ul>
           </div>
           <div class="flex flex-wrap gap-2 mb-4">
-            <span class="bg-red-500/20 text-red-400 px-3 py-1 rounded-full text-xs font-semibold border border-red-500/30">Arduino</span>
-            <span class="bg-orange-500/20 text-orange-400 px-3 py-1 rounded-full text-xs font-semibold border border-orange-500/30">Hardware</span>
-            <span class="bg-yellow-500/20 text-yellow-400 px-3 py-1 rounded-full text-xs font-semibold border border-yellow-500/30">Embedded</span>
+            <span class="bg-yellow-500/20 text-yellow-400 px-3 py-1 rounded-full text-xs font-semibold border border-yellow-500/30">Mobile</span>
+            <span class="bg-orange-500/20 text-orange-400 px-3 py-1 rounded-full text-xs font-semibold border border-orange-500/30">Utility</span>
           </div>
           <div class="flex gap-2 pt-4 border-t border-gray-700/50">
-            <button disabled class="flex-1 bg-gray-600/50 text-gray-400 px-4 py-2.5 rounded-lg text-xs font-bold cursor-not-allowed opacity-60">
-              <i class="fas fa-lock mr-2"></i>Private
-            </button>
+            <a href="https://github.com/DimePrangija/ConversionApp" target="_blank" rel="noopener noreferrer" class="flex-1 bg-gray-700/50 hover:bg-gray-600 text-white px-4 py-2.5 rounded-lg text-xs font-bold transition-all duration-300 text-center border border-gray-600 hover:border-gray-500">
+              <i class="fab fa-github mr-2"></i>Code
+            </a>
+          </div>
+        </div>
+      </div>
+    
+      <!-- Project 8: Personal Portfolio Website -->
+      <div class="project-card group relative bg-gradient-to-br from-[#111827] to-[#1a1f35] border border-[#1f2937] rounded-2xl overflow-hidden shadow-xl transition-all duration-500 hover:border-[#14b8a6] hover:shadow-[0_0_30px_rgba(20,184,166,0.4)] hover:scale-[1.03] hover:-translate-y-2" data-category="html css javascript">
+        <div class="absolute top-3 right-3 z-10">
+          <span class="bg-gradient-to-r from-green-400 to-emerald-500 text-gray-900 px-3 py-1 rounded-full text-xs font-bold shadow-lg animate-pulse">
+            <i class="fas fa-fire mr-1"></i>You're Here!
+          </span>
+        </div>
+        <div class="relative h-40 bg-gradient-to-br from-[#14b8a6]/20 to-[#06b6d4]/20 flex items-center justify-center overflow-hidden">
+          <div class="text-6xl text-[#22d3ee] transition-transform duration-500 group-hover:scale-110 group-hover:rotate-6">
+            <i class="fas fa-user-circle"></i>
+          </div>
+          <div class="absolute inset-0 bg-gradient-to-t from-[#111827] to-transparent opacity-60"></div>
+        </div>
+        <div class="p-6">
+          <h3 class="text-xl font-bold mb-3 bg-gradient-to-r from-[#14b8a6] to-[#22d3ee] bg-clip-text text-transparent group-hover:from-[#22d3ee] group-hover:to-[#14b8a6] transition-all duration-300">
+            Personal Portfolio Website
+          </h3>
+          <p class="text-gray-300 mb-4 text-sm leading-relaxed">Modern portfolio website with contemporary frontend stack, focusing on performance, responsiveness, and clean visual hierarchy. Features smooth navigation, subtle animations, and scalable content structure.</p>
+          <div class="mb-4">
+            <h4 class="text-xs font-semibold text-gray-400 mb-2 uppercase tracking-wide">Key Features</h4>
+            <ul class="space-y-1 text-sm text-gray-400">
+              <li class="flex items-start"><i class="fas fa-check-circle text-[#14b8a6] mr-2 mt-1 text-xs"></i><span>Performance-optimized design</span></li>
+              <li class="flex items-start"><i class="fas fa-check-circle text-[#14b8a6] mr-2 mt-1 text-xs"></i><span>Responsive & accessible</span></li>
+              <li class="flex items-start"><i class="fas fa-check-circle text-[#14b8a6] mr-2 mt-1 text-xs"></i><span>Smooth animations & navigation</span></li>
+        </ul>
+        </div>
+          <div class="flex flex-wrap gap-2 mb-4">
+            <span class="bg-orange-500/20 text-orange-400 px-3 py-1 rounded-full text-xs font-semibold border border-orange-500/30">HTML</span>
+            <span class="bg-blue-500/20 text-blue-400 px-3 py-1 rounded-full text-xs font-semibold border border-blue-500/30">CSS</span>
+            <span class="bg-yellow-500/20 text-yellow-400 px-3 py-1 rounded-full text-xs font-semibold border border-yellow-500/30">JavaScript</span>
+      </div>
+          <div class="flex gap-2 pt-4 border-t border-gray-700/50">
+            <a href="https://github.com/DimePrangija/Portfolio" target="_blank" rel="noopener noreferrer" class="flex-1 bg-gray-700/50 hover:bg-gray-600 text-white px-4 py-2.5 rounded-lg text-xs font-bold transition-all duration-300 text-center border border-gray-600 hover:border-gray-500">
+              <i class="fab fa-github mr-2"></i>Code
+            </a>
           </div>
         </div>
       </div>
@@ -1187,15 +1272,15 @@
           <div class="h-1 w-12 bg-gradient-to-r from-transparent to-[#14b8a6] rounded-full"></div>
           <i class="fas fa-briefcase text-5xl text-[#14b8a6] animate-pulse"></i>
           <div class="h-1 w-12 bg-gradient-to-l from-transparent to-[#22d3ee] rounded-full"></div>
-        </div>
+          </div>
         <h2 class="text-5xl md:text-6xl font-extrabold mb-4 animate-gradient">
           Work Experience
         </h2>
         <p class="text-gray-400 text-lg max-w-3xl mx-auto leading-relaxed">
           Professional experience in product management, software engineering, and cross-functional collaboration
         </p>
-      </div>
-    
+          </div>
+          
       <!-- Experience Timeline -->
       <div class="space-y-8">
         
@@ -1205,7 +1290,7 @@
       <div>
               <h3 class="text-2xl font-bold text-white mb-2 group-hover:text-blue-400 transition-colors">
                 Associate Product Manager Intern
-          </h3>
+        </h3>
               <p class="text-blue-400 font-semibold text-lg mb-1">SIGNAVATAR</p>
               <p class="text-gray-400 text-sm">Belgrade, Serbia</p>
           </div>
@@ -1246,13 +1331,13 @@
         <!-- RED TECH -->
         <div class="group relative bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl p-8 shadow-xl border border-red-500/20 hover:border-red-400/50 hover:shadow-[0_0_30px_rgba(239,68,68,0.3)] transition-all duration-500 hover:scale-[1.02] hover:-translate-y-2">
           <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-4 mb-4">
-            <div>
+      <div>
               <h3 class="text-2xl font-bold text-white mb-2 group-hover:text-red-400 transition-colors">
                 Software Engineer Intern
-            </h3>
+          </h3>
               <p class="text-red-400 font-semibold text-lg mb-1">RED TECH</p>
               <p class="text-gray-400 text-sm">Belgrade, Serbia</p>
-          </div>
+        </div>
             <div class="flex-shrink-0">
               <span class="bg-red-500/20 text-red-400 px-4 py-2 rounded-full text-sm font-semibold border border-red-500/30">
                 Jun 2023 - Sep 2023
