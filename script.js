@@ -568,12 +568,11 @@ document.addEventListener('DOMContentLoaded', () => {
   const typedTextElement = document.getElementById('typed-text');
   if (typedTextElement) {
     const words = [
-      'Computer Science Student',
+      'Computer Science Graduate',
       'Full-Stack Developer',
       'Problem Solver',
       'Tech Enthusiast',
-      'Creative Thinker',
-      'Team Player'
+      'Creative Thinker'
     ];
     new TypingEffect(typedTextElement, words, 100, 50, 2000);
   }
