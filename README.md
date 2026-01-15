@@ -19,7 +19,7 @@ The portfolio is designed as a fast, responsive, and modern single-page website 
 
 * HTML5
 * Tailwind CSS
-* JavaScript (ES6+)
+* JavaScript 
 
 The site is built as a static frontend and is compatible with Vercel and other static hosting providers.
 
