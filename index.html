@@ -950,12 +950,15 @@
             <i class="fas fa-brain mr-1"></i>AI/ML
           </span>
           </div>
-        <div class="relative h-40 bg-gradient-to-br from-purple-500/20 to-pink-500/20 flex items-center justify-center overflow-hidden">
-          <div class="text-6xl text-purple-400 transition-transform duration-500 group-hover:scale-110 group-hover:rotate-6">
-            <i class="fas fa-robot"></i>
-          </div>
-          <div class="absolute inset-0 bg-gradient-to-t from-[#111827] to-transparent opacity-60"></div>
+        <div class="relative h-56 overflow-hidden bg-[#111827] cursor-pointer" id="ai-intervention-gallery-trigger">
+          <img src="assets/Rl system.png" alt="RL System Architecture" class="w-full h-full object-contain transition-transform duration-500 group-hover:scale-105">
+          <div class="absolute inset-0 bg-gradient-to-t from-[#111827]/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+          <div class="absolute bottom-3 left-1/2 transform -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            <span class="bg-[#14b8a6]/90 text-white px-4 py-1.5 rounded-full text-xs font-bold flex items-center gap-2">
+              <i class="fas fa-sitemap mr-1"></i>View Architecture
+            </span>
         </div>
+          </div>
         <div class="p-6">
           <h3 class="text-xl font-bold mb-3 bg-gradient-to-r from-[#14b8a6] to-[#22d3ee] bg-clip-text text-transparent group-hover:from-[#22d3ee] group-hover:to-[#14b8a6] transition-all duration-300">
             Human-Centered AI Intervention System
@@ -989,11 +992,14 @@
             <i class="fab fa-apple mr-1"></i>iOS
           </span>
         </div>
-        <div class="relative h-40 bg-gradient-to-br from-green-500/20 to-emerald-500/20 flex items-center justify-center overflow-hidden">
-          <div class="text-6xl text-green-400 transition-transform duration-500 group-hover:scale-110 group-hover:rotate-6">
-            <i class="fas fa-calendar-day"></i>
+        <div class="relative h-56 overflow-hidden bg-[#111827] cursor-pointer" id="habitualist-gallery-trigger">
+          <img src="assets/Habitualist/Gemini_Generated_Image_v0ypo2v0ypo2v0yp.png" alt="Habitualist App" class="w-full h-full object-contain transition-transform duration-500 group-hover:scale-105">
+          <div class="absolute inset-0 bg-gradient-to-t from-[#111827]/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+          <div class="absolute bottom-3 left-1/2 transform -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            <span class="bg-[#14b8a6]/90 text-white px-4 py-1.5 rounded-full text-xs font-bold flex items-center gap-2">
+              <i class="fas fa-images mr-1"></i>View Gallery
+            </span>
           </div>
-          <div class="absolute inset-0 bg-gradient-to-t from-[#111827] to-transparent opacity-60"></div>
         </div>
         <div class="p-6">
           <h3 class="text-xl font-bold mb-3 bg-gradient-to-r from-[#14b8a6] to-[#22d3ee] bg-clip-text text-transparent group-hover:from-[#22d3ee] group-hover:to-[#14b8a6] transition-all duration-300">
@@ -2471,6 +2477,221 @@
           } else if (e.key === 'ArrowRight') {
             nextImage();
           }
+        }
+      });
+    })();
+  </script>
+
+  <!-- Habitualist Image Gallery Modal -->
+  <div id="habitualist-gallery-modal" class="fixed inset-0 z-50 hidden items-center justify-center bg-black/95 backdrop-blur-sm">
+    <div class="relative w-full h-full flex flex-col items-center justify-center p-4">
+      <!-- Close Button -->
+      <button id="close-habitualist-modal" class="absolute top-4 right-4 z-50 text-white hover:text-[#14b8a6] transition-colors duration-300 bg-gray-800/80 hover:bg-gray-700/80 rounded-full p-3 shadow-lg">
+        <i class="fas fa-times text-2xl"></i>
+      </button>
+      
+      <!-- Previous Button -->
+      <button id="prev-habitualist-image" class="absolute left-4 top-1/2 transform -translate-y-1/2 z-50 text-white hover:text-[#14b8a6] transition-colors duration-300 bg-gray-800/80 hover:bg-gray-700/80 rounded-full p-4 shadow-lg">
+        <i class="fas fa-chevron-left text-2xl"></i>
+      </button>
+      
+      <!-- Next Button -->
+      <button id="next-habitualist-image" class="absolute right-4 top-1/2 transform -translate-y-1/2 z-50 text-white hover:text-[#14b8a6] transition-colors duration-300 bg-gray-800/80 hover:bg-gray-700/80 rounded-full p-4 shadow-lg">
+        <i class="fas fa-chevron-right text-2xl"></i>
+      </button>
+      
+      <!-- Image Container -->
+      <div class="relative w-full max-w-4xl h-full max-h-[90vh] flex items-center justify-center">
+        <img id="habitualist-gallery-image" src="" alt="Habitualist Gallery Image" class="max-w-full max-h-full object-contain rounded-lg shadow-2xl">
+      </div>
+      
+      <!-- Image Counter -->
+      <div class="absolute bottom-4 left-1/2 transform -translate-x-1/2 z-50 bg-gray-800/80 text-white px-4 py-2 rounded-full text-sm font-semibold">
+        <span id="habitualist-image-counter">1 / 5</span>
+      </div>
+      
+      <!-- Image Dots Navigation -->
+      <div id="habitualist-image-dots" class="absolute bottom-16 left-1/2 transform -translate-x-1/2 z-50 flex gap-2">
+        <!-- Dots will be generated by JavaScript -->
+      </div>
+    </div>
+  </div>
+
+  <!-- AI Intervention Architecture Modal -->
+  <div id="ai-intervention-gallery-modal" class="fixed inset-0 z-50 hidden items-center justify-center bg-black/95 backdrop-blur-sm">
+    <div class="relative w-full h-full flex flex-col items-center justify-center p-4">
+      <!-- Close Button -->
+      <button id="close-ai-intervention-modal" class="absolute top-4 right-4 z-50 text-white hover:text-[#14b8a6] transition-colors duration-300 bg-gray-800/80 hover:bg-gray-700/80 rounded-full p-3 shadow-lg">
+        <i class="fas fa-times text-2xl"></i>
+      </button>
+      
+      <!-- Image Container -->
+      <div class="relative w-full max-w-6xl h-full max-h-[90vh] flex items-center justify-center">
+        <img id="ai-intervention-gallery-image" src="assets/Rl system.png" alt="RL System Architecture" class="max-w-full max-h-full object-contain rounded-lg shadow-2xl">
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Habitualist Image Gallery Modal Functionality
+    (function() {
+      const modal = document.getElementById('habitualist-gallery-modal');
+      const trigger = document.getElementById('habitualist-gallery-trigger');
+      const closeBtn = document.getElementById('close-habitualist-modal');
+      const prevBtn = document.getElementById('prev-habitualist-image');
+      const nextBtn = document.getElementById('next-habitualist-image');
+      const galleryImage = document.getElementById('habitualist-gallery-image');
+      const imageCounter = document.getElementById('habitualist-image-counter');
+      const imageDots = document.getElementById('habitualist-image-dots');
+      
+      // Habitualist images in order
+      const images = [
+        'assets/Habitualist/Habit1.PNG',
+        'assets/Habitualist/Habit2.PNG',
+        'assets/Habitualist/Habit3.PNG',
+        'assets/Habitualist/Habit4.PNG',
+        'assets/Habitualist/Habit5.PNG'
+      ].map(path => {
+        const parts = path.split('/');
+        const filename = parts[parts.length - 1];
+        const basePath = parts.slice(0, -1).join('/');
+        return basePath + '/' + encodeURIComponent(filename);
+      });
+      
+      let currentImageIndex = 0;
+      
+      // Create dots
+      images.forEach((_, index) => {
+        const dot = document.createElement('button');
+        dot.className = 'w-2 h-2 rounded-full bg-gray-600 hover:bg-[#14b8a6] transition-colors duration-300';
+        dot.setAttribute('data-index', index);
+        dot.addEventListener('click', () => goToImage(index));
+        imageDots.appendChild(dot);
+      });
+      
+      function updateImage(index) {
+        currentImageIndex = index;
+        galleryImage.src = images[index];
+        imageCounter.textContent = `${index + 1} / ${images.length}`;
+        
+        // Update active dot
+        const dots = imageDots.querySelectorAll('button');
+        dots.forEach((dot, i) => {
+          if (i === index) {
+            dot.classList.remove('bg-gray-600');
+            dot.classList.add('bg-[#14b8a6]');
+          } else {
+            dot.classList.remove('bg-[#14b8a6]');
+            dot.classList.add('bg-gray-600');
+          }
+        });
+      }
+      
+      function goToImage(index) {
+        if (index >= 0 && index < images.length) {
+          updateImage(index);
+        }
+      }
+      
+      function nextImage() {
+        const next = (currentImageIndex + 1) % images.length;
+        goToImage(next);
+      }
+      
+      function prevImage() {
+        const prev = (currentImageIndex - 1 + images.length) % images.length;
+        goToImage(prev);
+      }
+      
+      function openModal(index = 0) {
+        updateImage(index);
+        modal.classList.remove('hidden');
+        modal.classList.add('flex');
+        document.body.style.overflow = 'hidden';
+      }
+      
+      function closeModal() {
+        modal.classList.add('hidden');
+        modal.classList.remove('flex');
+        document.body.style.overflow = '';
+      }
+      
+      // Event Listeners
+      if (trigger) {
+        trigger.addEventListener('click', () => openModal(0));
+      }
+      
+      if (closeBtn) {
+        closeBtn.addEventListener('click', closeModal);
+      }
+      
+      if (prevBtn) {
+        prevBtn.addEventListener('click', prevImage);
+      }
+      
+      if (nextBtn) {
+        nextBtn.addEventListener('click', nextImage);
+      }
+      
+      // Close on background click
+      modal.addEventListener('click', (e) => {
+        if (e.target === modal) {
+          closeModal();
+        }
+      });
+      
+      // Keyboard navigation
+      document.addEventListener('keydown', (e) => {
+        if (!modal.classList.contains('hidden')) {
+          if (e.key === 'Escape') {
+            closeModal();
+          } else if (e.key === 'ArrowLeft') {
+            prevImage();
+          } else if (e.key === 'ArrowRight') {
+            nextImage();
+          }
+        }
+      });
+    })();
+
+    // AI Intervention Architecture Modal Functionality
+    (function() {
+      const modal = document.getElementById('ai-intervention-gallery-modal');
+      const trigger = document.getElementById('ai-intervention-gallery-trigger');
+      const closeBtn = document.getElementById('close-ai-intervention-modal');
+      
+      function openModal() {
+        modal.classList.remove('hidden');
+        modal.classList.add('flex');
+        document.body.style.overflow = 'hidden';
+      }
+      
+      function closeModal() {
+        modal.classList.add('hidden');
+        modal.classList.remove('flex');
+        document.body.style.overflow = '';
+      }
+      
+      // Event Listeners
+      if (trigger) {
+        trigger.addEventListener('click', openModal);
+      }
+      
+      if (closeBtn) {
+        closeBtn.addEventListener('click', closeModal);
+      }
+      
+      // Close on background click
+      modal.addEventListener('click', (e) => {
+        if (e.target === modal) {
+          closeModal();
+        }
+      });
+      
+      // Keyboard navigation
+      document.addEventListener('keydown', (e) => {
+        if (!modal.classList.contains('hidden') && e.key === 'Escape') {
+          closeModal();
         }
       });
     })();
